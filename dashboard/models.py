@@ -22,7 +22,7 @@ class CaseRecord(models.Model):
         default=STATUS_OPEN,
     )
     district = models.CharField(max_length=100)
-    assigned_detective = models.CharField(max_length=200, blank=True, default='')
+    assigned_officer = models.CharField(max_length=200, blank=True, default='')
     date_reported = models.DateField()
     description = models.TextField(blank=True, null=True)
     created_at = models.DateTimeField(auto_now_add=True)
