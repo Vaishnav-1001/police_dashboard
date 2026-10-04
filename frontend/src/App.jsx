@@ -51,7 +51,7 @@ export default function App() {
   }, []);
 
   const { cases, loading, error, refreshCases, prependCase } = useCases({
-    pollingMs: 15000,
+    pollingMs: 60000,
     enabled: user !== undefined && user !== null,
   });
 

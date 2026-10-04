@@ -70,7 +70,7 @@ export default function CaseReport({ onClose, onRegistered, onToast }) {
         priority: form.priority, 
         district: form.district, 
         date_reported: form.date ? form.date.split("T")[0] : "", 
-        assigned_officer: form.officer.trim(), 
+        assigned_officer: (form.officer || ""), 
         description: form.desc.trim() 
       };
       Object.entries(fields).forEach(([key, value]) => data.append(key, value));
